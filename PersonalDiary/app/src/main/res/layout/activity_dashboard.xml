@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99c7c3"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/nextMonthDayColor"
+        android:gravity="center"
+        android:text="Welcome to your dashboard"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/calbut"
+        android:layout_width="161dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="74dp"
+        android:background="#FF37A798"
+        android:text="View calendar" />
+
+    <Button
+        android:id="@+id/caladd"
+        android:layout_width="149dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/calbut"
+
+        android:layout_marginTop="-74dp"
+        android:background="#FF37A798"
+        android:text="Google Calendar operations" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="429dp"
+        android:layout_toEndOf="@+id/caladd"
+        android:background="#ff00"
+        android:fontFamily="sans-serif-condensed"
+        android:text="LOGOUT"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/detailadd"
+        android:layout_width="138dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="206dp"
+        android:background="#FF37A798"
+        android:onClick="NotesAct"
+        android:text="Notes" />
+
+    <Button
+        android:id="@+id/expbut"
+        android:layout_width="144dp"
+        android:layout_height="88dp"
+        android:layout_alignStart="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="198dp"
+        android:background="#FF37A798"
+        android:text="Add Expenses" />
+
+    <Button
+        android:id="@+id/smsadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="123dp"
+        android:background="#FF37A798"
+        android:text="SMS" />
+
+
+</RelativeLayout>

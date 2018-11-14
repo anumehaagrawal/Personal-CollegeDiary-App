@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="#79CDCD"
+    >
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/event_name"
+        android:hint="Enter event name"
+        android:layout_margin="0dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/event_desc"
+        android:layout_below="@+id/event_name"
+        android:hint="Enter event name"
+        android:layout_margin="0dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/event_sd"
+        android:layout_below="@+id/event_desc"
+        android:hint="Enter start date : Date-Month"
+        android:layout_margin="0dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/event_ed"
+        android:layout_below="@+id/event_sd"
+        android:hint="Enter end date : Date-Month"
+        android:layout_margin="0dp"/>
+
+    <Button
+        android:id="@+id/get_cal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/event_sd"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="readEvents"
+        android:text="View cals "
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/add_cal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/get_cal"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="addEvent"
+        android:text="Add Event"
+        android:textAppearance="?android:textAppearanceLarge" />
+    <ListView
+
+        android:gravity="center"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#000"
+
+        android:layout_marginTop="350dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/add_cal"
+        android:id="@+id/list_view" />
+
+
+
+</RelativeLayout>
